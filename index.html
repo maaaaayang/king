@@ -1,243 +1,262 @@
-﻿<!DOCTYPE html >
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />	
-	<title>The Lord of the Rings</title>
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css" />	
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/prefixfree.min.js"></script>
-	<script type="text/javascript" src="js/custom.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반지의 제왕 캐릭터 소개</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        h1 {
+            color: #d4af37;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .nav-tags {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .nav-tags li {
+            background-color: #333;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #d4af37;
+            border: 1px solid #444;
+        }
+        .intro-text {
+            max-width: 800px;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-style: italic;
+            color: #b0b0b0;
+            background: #252525;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #d4af37;
+        }
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .character-card {
+            background-color: #222;
+            border: 1px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .character-name {
+            color: #fff;
+            font-size: 1.4em;
+            margin: 0 0 10px 0;
+            border-bottom: 1px solid #444;
+            padding-bottom: 10px;
+        }
+        .character-desc {
+            color: #aaa;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        .character-date {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.8em;
+            color: #777;
+        }
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #666;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+    </style>
 </head>
 <body>
 
+    <header>
+        <h1>반지의 제왕 (The Lord of the Rings)</h1>
+        <ul class="nav-tags">
+            <li>반지 원정대 (The Fellowship of the Ring)</li>
+            <li>호빗 (Hobbit)</li>
+            <li>인간 (Human)</li>
+            <li>엘프 (Elf)</li>
+        </ul>
+    </header>
 
-	<h1><a href="http://aebon.dreamitbiz.com/jin/pt04/index.html"><img src="img/logo2_1.png" /></a></h1>
-	
-	<ul id="sns">
-		<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		<li><a href="#"><i class="fa fa-envelope"></i></a></li>
-		<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-		<li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
-	</ul>
-	
-	<ul id="navi">
-		<li>The Fellowship of the Ring</li>
-		<li>Hobbit</li>
-		<li>Human</li>
-		<li>Elf</li>
-	</ul>
+    <div class="intro-text">
+        반지의 제왕은 영국 작가 J. R. R. 톨킨이 집필한 서사 판타지 소설입니다. 이 이야기는 톨킨의 1937년 판타지 소설인 '호빗'의 후속작으로 시작되었으나, 결과적으로 훨씬 더 거대한 작품으로 발전하게 되었습니다.
+    </div>
 
-	 <div class="vid">
-	 </div>
-	
-	<div id="marquee">		
-		<marquee  direction="up" scrollamount=2 loop="infinite" height=450px > 			
+    <main class="character-grid">
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">프로도 배긴스 (Frodo Baggins)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">아라곤 엘레사르 (Aragorn Elessar)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">간달프 (Gandalf)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">김리 (Gimli)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">레골라스 (Legolas)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">보로미르 (Boromir)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">샘와이즈 감지 (Samwise Gamgee)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">페레그린 툭 (Peregrin Took)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">메리아독 브랜디벅 (Meriadoc Brandybuck)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">골룸 (Gollum)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">세오덴 왕 (King Theoden)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">에오윈 (Eowyn)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">파라미르 (Faramir)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">갈라드리엘 (Galadriel)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">엘론드 경 (Lord Elrond)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">스란두일 (Thranduil)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">아르웬 (Arwen)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+        <div class="character-card">
+            <div class="card-content">
+                <h2 class="character-name">사루만 (Saruman)</h2>
+                <p class="character-desc">작품 설명이 여기에 들어갑니다.</p>
+                <span class="character-date">2015.02.20</span>
+            </div>
+        </div>
+    </main>
 
-			<p class="m_text">“There is only one Lord of the Ring, only one who can bend it to his will. And he does not share power.”</p>
-			<p class="m_name">– Gandalf</p><br />
-
-			<p class="m_text">“That there’s some good in this world, Mr. Frodo… and it’s worth fighting for.”</p>
-			<p class="m_name">– Samwise Gamgee</p><br />
-
-			<p class="m_text">“Even the smallest person can change the course of the future.”</p>
-			<p class="m_name">– Galadriel</p><br />
-
-			<p class="m_text">“There is no curse in Elvish, Entish, or the tongues of Men for this treachery.”</p>
-			<p class="m_name">– Treebeard</p><br />
-
-			<p class="m_text">“I would rather share one lifetime with you than face all the Ages of this world alone.”</p>
-			<p class="m_name">– Arwen</p><br />
-
-			<p class="m_text">“Mordor. The one place in Middle-Earth we don’t want to see any closer. And it’s the one place we’re trying to get to. It’s just where we can’t get. Let’s face it, Mr. Frodo, we’re lost.”</p>
-			<p class="m_name">– Samwise Gamgee</p><br />
-
-			<p class="m_text">“I’m glad to be with you, Samwise Gamgee…here at the end of all things.”</p>
-			<p class="m_name">– Frodo</p><br />
-
-			
-		</marquee>	
-	</div>
-
-	
-	
-	<section>
-		<article>
-			<h2><a href="img/pic1.jpg">Frodo Baggins </a></h2>
-			<strong><img src="img/a1.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic2.jpg">Aragorn Elassar </a></h2>
-			<strong><img src="img/a2.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic3.jpg">Gandalf</a></h2>
-			<strong><img src="img/a3.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic4.jpg">Gimli </a></h2>
-			<strong><img src="img/a4_1.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic5.jpg">Legolas </a></h2>
-			<strong><img src="img/a5.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic6.jpg">Boromir </a></h2>
-			<strong><img src="img/a6.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic7.jpg">Samwise Gamgee </a></h2>
-			<strong><img src="img/a7.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic8.jpg">Peregrin Took </a></h2>
-			<strong><img src="img/a8.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic9.jpg">Meri Brandybuck</a></h2>
-			<strong><img src="img/a9.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic10.jpg">gollum</a></h2>
-			<strong><img src="img/a12.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic11.jpg">King Theoden</a></h2>
-			<strong><img src="img/a10.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic12.jpg">Eowyn</a></h2>
-			<strong><img src="img/a11.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic13.jpg">Faramir</a></h2>
-			<strong><img src="img/a18.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic14.jpg">Galadriel</a></h2>
-			<strong><img src="img/a13.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic15.jpg">Lord Elrond</a></h2>
-			<strong><img src="img/a14.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic16.jpg">Thranduil </a></h2>
-			<strong><img src="img/a15.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>
-		
-		<article>
-			<h2><a href="img/pic17.jpg">Arwen </a></h2>
-			<strong><img src="img/a16.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>		
-
-		<article>
-			<h2><a href="img/pic18.jpg">Saruman</a></h2>
-			<strong><img src="img/a17.jpg" /></strong>
-			<p><img src="" /></p>
-			<em>Artwork description comes here. <br />2015.02.20</em>
-			<span>close</span>
-		</article>	
-	
-	</section>
-	
-	<p class="copyright">The display resolution 1920*1080 optimized.<br />2016 Jin, Ryu All right reserved.</p>
-
-
-	<!-- ring -->
-	<p class="ring">
-		<img src="img/ring.png" />		
-	</p>
-
-	<p class="ring_t">The Lord of the Rings is an epic high-fantasy novel written by English author J. R. R. Tolkien. The story began as a sequel to Tolkien's 1937 fantasy novel The Hobbit, but eventually developed into a much larger work.
-	</p>
-	
-
+    <footer>
+        <p>화면 해상도 1920*1080에 최적화되었습니다.<br>© 2016 Jin, Ryu All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
